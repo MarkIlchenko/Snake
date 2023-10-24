@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillel: Test Task</title>
+    <!-- Додав фавіконку для сайту, щоб було красивіше. -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/9985/9985947.png">
+    <!-- Додав фавіконку для сайту, щоб було красивіше. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span class="high-score">High Score: 0</span>
+            <input type="text" class="player-name flex-none" placeholder="Your Name">
+            <select class="difficulty flex-none">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button class="start-button prm-btn flex-none">Start Game</button>
+            <button class="restart-button prm-btn flex-none">Restart Game</button>
+        </div>
+        <div class="play-board"></div>
+        <div class="controls">
+            <i data-key="a" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="w" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="d" class="fa-solid fa-arrow-right-long"></i>
+            <i data-key="s" class="fa-solid fa-arrow-down-long"></i>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Enter Your Name and Difficulty</h2>
+            <input type="text" id="player-name-modal" placeholder="Your Name">
+            <select id="difficulty-modal">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start-button-modal">Start Game</button>
+        </div>
+    </div>
+    
+    <!-- Right section for player ratings -->
+    <div class="ratings">
+        <ul id="player-list"></ul>
+    </div>
+    
+    <ul class="imgTest"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
